@@ -1,0 +1,244 @@
+{
+  "is-now-the-time-to-solve-the-deepfake-threat": {
+    "title": "Is now the time to solve the deepfake threat?",
+    "description": "With the increase in shareability of fake content on social media, the ease of access of deepfake technology to end users, and an increasingly divisive political landscape have come together to create the perfect landscape for the growth of deepfakes.\n\nIn this talk, we will explain why we at Amber think an explosion of deep fake content is just around the corner. We’ll then present a few of the most recent ideas that have risen to tackle this requirement, such as distributed authentication mechanisms and forensic analysis of artifacts. We’ll also present our findings in the work we’ve undertaken in implementing and testing some of these ideas. Finally, we’ll discuss some of the challenges we’ve faced in addressing the marketplace and raising awareness of this problem.",
+    "speakers": [
+      "Roderick Hodgson"
+    ]
+  },
+  "super-resolution-the-scaler-of-tomorrow-here-today": {
+    "title": "Super Resolution: The scaler of tomorrow, here today!",
+    "description": "Scaling. Long considered a solved problem, in this talk I'll go over current state-of-the art results in video upscaling; how it works, what it does, and how you can start trying it out today.\n\nThis talk will:\n - Cover the basics of video scaling, and algorithms like nearest neighbour, bilinear, bicubic and lanczos scalers\n - Review scaling's impact on quality, specifically VMAF, and talk through how maximizing quality using the convex hull requires scaling\n - Discuss state-of-the art Super-Resolution based upscaling, and give a broad overview of how it works and where it can fit.\n - Highlight the downsides of super resolution, and discuss why we haven't seen broader adoption of related techniques (hint: its performance!)\n - Finish with a demo of super resolution running in browser using WebGL, and discuss the open-source project that people can use to try out super resolution today.\n\nWhat's special about this talk is that I'll be evaluating super-resolution not just from the perspective of \"it works!\", but with a critical eye for how these kind of techniques can fit in our current scaling stacks, and exactly how they impact quality through VMAF analysis.",
+    "speakers": [
+      "Nick Chadwick"
+    ]
+  },
+  "the-dos-and-donts-about-streaming-security--confessions-from-a-signal-hacking-expert": {
+    "title": "The do's and don'ts about Streaming security - Confessions from a signal hacking expert",
+    "description": "This a mixed talk, between technical and business point of view of the topic. The Dos are split into two: tech side & non-tech side, and same for the don'ts.\n\nAs I work daily hacking streams for monitoring reasons, I record streams from 7000 stations (TV and Radio channels). This presentation is an explanation of the weakness of some securities, against the strengths of some techniques, based from my expertise on how much difficult is for our team to hack a signal.\n\nWhich streams are unhackable? Which securities are recommended? Which securities doesn't work at all? How some securities are bypassed? \n\nIn this longer version of the talk we'll dig further into technical details with real life examples.\n\nFirstly in the presentation we see the does and don'ts on the technical side, with some responses to the previous questions. \nWe'll show how to extract URL parameters from IPTV broadcastings that are using some blockings and/or encryptions.\n\nSecondly, we'll talk about the subject from the non-tech point of view: how piracy can affect the companies, how to struggle it, and some recommendations about the topic. I will include 2 use cases, one is Rojadirecta.com website in Spain (which used to be an illegal football streams website) and the other one is about Game of Thrones (HBO's famous TV series and most pirated TV show of the history).\n\nAnd thirdly, we will end with the conclusions and recommendations.",
+    "speakers": [
+      "Javier Brines Garcia"
+    ]
+  },
+  "modeling-the-conceptual-structure-of-ffmpeg-in-javascript": {
+    "title": "Modeling the conceptual structure of FFmpeg in JavaScript",
+    "description": "A core tool in many video developers' workflows, FFmpeg has a frustratingly steep learning curve and a difficult syntax to master and remember. Many of us write code to automate FFmpeg runs, and Node.js is a popular way to do that.\n\nHowever, current JavaScript interfaces to FFmpeg do nothing to ease the underlying difficulty of the tool. Instead, they mostly provide a one-to-one mapping of command line options in FFmpeg to method calls in JavaScript.\n\nIn this talk, I will introduce a new JavaScript library for working with ffmpeg. With this new library, I've tried to model the conceptual structure of an FFmpeg CLI command, focusing on IO mappings and filtergraphs to enable better understanding and readability out of the box and allow for easier construction of the correct FFmpeg command the first time, with more readable code as an end product as well.\n\nDuring the talk, I'll explain the motivation behind the library and show the mapping of conceptual structure in FFmpeg to library structure, then walk through a few examples of real FFmpeg commands and how they can be written using the library.",
+    "speakers": [
+      "Ryan B Harvey"
+    ]
+  },
+  "the-magic-of-human-visual-system-perception": {
+    "title": "The magic of Human Visual System perception",
+    "description": "How Video exploits the HVS using psychological malfunctions to achieve the Quality of Reality:\n\nVideo is based off of optical illusions of the HVS which\nis knowledge we can use to exploit the system and improve\nour perception of Quality. Subjective and Objective evaluation\nmethods are based upon the HVS knowledge we have accumulated.\n\nVideo technology itself has a foundation upon the basic flaw\nof our human eyes blind spot in allowing motion between frames to be perceived where nothing actually exists. Crunchyroll has a historical legacy of customers demanding\nhigh quality above and beyond normal OTT streaming services.\n\nI will go over various incidents with our compression methods\nas case studies correlating the HVS knowledge base. I will\nquestion our conventions and methods held as video engineers for the treatment of video and handling of quality perception. \n\nI will discuss an interesting patent we have obtained covering our work at trying to solve this problem through perceptual frame comparison methods for compression. \n\nThe talk will interweave various insights taken from fans of our\ncontent over time with the HVS magic of perception angle. \nWe have a unique audience who is very passionate about frame by frame video accuracy without any perceptual\nquality degradation. Our content is like art, truly drawn frame\nby frame mostly, and this brings to play a whole new level of\nquality expectations for our content. Anime is hard to encode\nas it is, let alone when you are encoding a whole set to serve\nof all resolutions. I will go into the phenomenon of HLS PTS\nalignment, debate of not using scenecut, affects this actually\nhas on perceptual quality. Showing how we have conflicting\ninterests at times of streaming smoothly vs. actual encoding\nquality of each frame to frame in an accurate manner correlating to the Human Visual System itself as 'Great Quality'.",
+    "speakers": [
+      "Christopher Kennedy"
+    ]
+  },
+  "objectionable-uses-of-objective-quality-metrics": {
+    "title": "Objectionable Uses of Objective Quality Metrics",
+    "description": "Objective quality metrics like VMAF, PSNR, and SSIM are in broad use today. While many have well known weaknesses, metrics like VMAF are highly accurate. They are how most companies evaluate encoders, but what happens when they all game the system for their own ends?\n\nWe will explore the effect of Goodhart's law on objective\nquality. Some ways are well known (--tune psnr anyone); however, other more sophisticated methods exploit statistical properties of our averaging mechanisms, scene dynamics, and outright abuse of codec parameters to make objective quality metrics less objective.\n\nIncluded will be a brief demonstration of a soon to be open source quality tool for massively distributed computation of quality metrics with a 30x speedup for VMAF and associated graphing utilities.\n\nIn detail these include:\n\n1) How to make an encoder \"tune\" for PSNR and why that destroys image quality\n2) How to make an encoder \"tune\" for SSIM and why that destroys image quality\n3) How to make the mean or harmonic mean higher and make visual quality worse for any metric\n4) How to abuse the tools most people use (ffmpeg) to produce flatly incorrect results\n\nThis  talk will help users avoid falling prey to objectionable uses of objective quality metrics.",
+    "speakers": [
+      "Richard Fliam"
+    ]
+  },
+  "rtmp-web-video-innovation-or-web-10-hack-how-did-we-get-to-now": {
+    "title": "RTMP: web video innovation or Web 1.0 hack… how did we get to now?",
+    "description": "One of the creators of RTMP will take you back to a time before Firefox, Safari, and Chrome, when Internet Explorer was used by 92% of people on the Web, and over 98% of browsers had Flash installed.  RTMP was first prototyped in late 1999 and released in July 2002.  Sarah Allen will share the untold story of the origins of this protocol  — careful design choices and unexpected hacks that led to a de-facto standard that still drives the majority of live web video today.",
+    "speakers": [
+      "Sarah Allen"
+    ]
+  },
+  "largescale-media-archive-migration-to-the-cloud": {
+    "title": "Large-Scale Media Archive Migration to the Cloud",
+    "description": "We've spent about 1.5 years building a cloud-based microservice platform for media supply chain, and at the same time moving close to 40 petabytes of content to cloud based storage and archive. \n\nIf you're watching studio content at home (cable, OTT, broadcast, mobile) or at a theater, it's probably originated from our archive.\n\nThe goal of this talk is to detail exactly how we accomplished this (we are a small team of less than a dozen people, with 130+ developers deploying services to manipulate content on top of our platform), and how we built cloud native infrastructure to ingest, secure, package, prep, transcode, apply machine learning to remove human operators, and deliver this content at a volume of about 5 petabytes of delivered media per month.\n\nMetrics are important, so we'll show as many of those as possible, as well as inventive ways to configure and use cloud storage and services to move and process content at this scale, and some of the 'uh oh' moments we ran into.",
+    "speakers": [
+      "Konstantin Wilms"
+    ]
+  },
+  "hevc-upload-experiments": {
+    "title": "HEVC Upload Experiments",
+    "description": "We tried HEVC for iOS video uploads. With claims of up to 2x better compression than H.264, we were anticipating huge bandwidth savings. Through manual testing as well as with millions of videos in production, we couldn't achieve the same quality (SSIM) as H264, even at identical bitrates. We exhausted the few settings that Apple exposes through their API, and filed a number of radars in the process.",
+    "speakers": [
+      "Chris Ellsworth"
+    ]
+  },
+  "scalable-peruser-ad-insertion-in-live-ott": {
+    "title": "Scalable Per-User Ad Insertion in Live OTT",
+    "description": "As more users shift their viewing from traditional linear mechanisms to over the top streaming services, Live OTT providers are facing ground-breaking levels of scale as they attempt to bring live streams to millions of concurrent users. One very important aspect of this scale is stream monetization through ad insertion as it allows providers to recoup the cost of deployment. Classically, Server-Side Ad Insertion (SSAI) has been the choice for seamless and targeted ad insertion, but this mechanism directly fights a providers ability to scale as targeting granularity becomes a direct multiplier for stream uniqueness. To our address this, we've designed a new paradigm called Server-Guided Ad Insertion (SGAI) which allows user specific ad targeting without compromising on features such as full program rewind and seamless insertion and would like to share this with the community.\n\nThis talk will walk through the construction of this new ad insertion paradigm and how we've applied it in production with DASH. First we will briefly discuss why SSAI is constrained at scale and how this relates back to the typical live manifest polling mechanism: manifests must be consistent across updates, thus ad targeting inherently requires response variation and server-state to persist it. Next we will walk through how we decouple manifest updates from response consistency by having the server only provide clients with information they don't already know, aka a patch update, pushing state persistence to the client and making the server state-less. Then we will use this patch update mechanism and an \"explode-collapse\" routing pattern to show how the main content distribution of the live stream can be shared across all users, while ad opportunities can be uniquely resolved for every client, achieving our goals of per-user ad targeting without feature compromise. Finally we will close on observations from our production deployment of this mechanism and how we are working to make this a standard paradigm in the industry.",
+    "speakers": [
+      "Zachary Cava"
+    ]
+  },
+  "smpte-st-2110--highest-quality-lowest-latency-pro-video-over-ip": {
+    "title": "SMPTE ST 2110 - Highest Quality, Lowest Latency, Pro Video over IP",
+    "description": "ST 2110 is the suite of standards from the Society of Motion Picture and Television Engineers (SMPTE) for transport of the highest quality, lowest latency professional video, audio, and ancillary data for live production.  ST 2110 allows broadcasters to move from bespoke digital coaxial cable signals for production video to Ethernet and IP.  This standard is now being used by broadcasters such as FOX, BBC, CBC, and NBC.  You may have already watched a Super Bowl produced with ST 2110 and not known it!  Ready for the future, ST 2110 can handle up to 8K resolutions and high dynamic range.   Media flows in ST 2110 use network delivered IEEE 1588 Precision Time Protocol for tight synchronization, avoiding audio/video \"lip sync\" errors and audio imaging phase distortion.  This talk will describe the ST 2110 standard as well as some specific implementations.",
+    "speakers": [
+      "Andy Warman"
+    ]
+  },
+  "building-an-automated-testing-suite-how-to-gain-confidence-that-your-release-will-not-break-playback-for-any-platformplayerosformat-combination": {
+    "title": "Building an automated testing suite: How to gain confidence that your release will not break playback for any platform/player/OS/format combination",
+    "description": "This is a DIY guide to building a multi-platform, multi-browser, multi-stream-format, multi-player, multi-everything tester for client-side video software. Instead of relying on manual testing (aka. interns) to identify issues, automated testing can save time and help focus teams on solving problems instead of discovering them. We walk you through the different building blocks of an integration testing tool: a grammar to describe video scenarios, an API able to access all variables (player versions, media engine versions, stream formats, etc.), an environment generator that can spin up a player with any combination of your chosen variables, a scheduler that launch pages on different platforms, and a way to gather results. We look at what we’ve achieved so far with this setup, the limitations on what is testable and what’s coming up next.",
+    "speakers": [
+      "Charles Sonigo",
+      "Jean-Baptiste Louazel"
+    ]
+  },
+  "edge-compute": {
+    "title": "Edge Compute",
+    "description": "Edge computing is a networking philosophy focused on bringing computing as close to the source of data as possible in order to reduce latency and bandwidth use. Using edge computing, you can move decision making in front of the CDN cache, allowing to run code for each HTTP request without additional load on origin servers. This could allow a level of control of the cache, requests, manifests that are traditionally thought to be out of reach allowing new experiences and solutions to existing problems.\n\nWe’ve been using edge computing for 3 years in production with video workloads to manage our delivery, encoding and ingest workflow and think it might be interesting to share some common patterns we think it might be useful for the rest of the community.",
+    "speakers": [
+      "Kyle Boutette"
+    ]
+  },
+  "designing-for-live-stream-failure-with-seamless-switching": {
+    "title": "Designing for Live Stream Failure with Seamless Switching",
+    "description": "Designing for failure is a well-known principle for cloud architectures. When applied to live streaming, this is even more important, as not only do you want your stream to continue through any resource failures or issues, you also want seamless audience experience to be maintained with no gaps in the coverage, so viewers never even notice potential issues. To achieve this level of resilience, you need a distributed system with redundancy and synchronization between encoding resources so any switching between them can graceful and invisible to anyone watching the output. In this talk, John Saxton, Senior Software Development Engineer at AWS Elemental, will dive into the world for live encoder synchronization and how that differs for on-premises and cloud native implementations, and future applications of the technology in critical live streaming scenarios.",
+    "speakers": [
+      "John Saxton",
+      "Shawn Przybilla"
+    ]
+  },
+  "ab-user-testing-when-your-cdn-cache-messes-with-your-results": {
+    "title": "A/B user testing when your CDN cache messes with your results",
+    "description": "Typical A/B user testing changes client-side behavior between users and compares metrics to evaluate the impact of the change. When applying this principle to video (pipelines/containers/codecs/...) changes, things become more complicated. As the the user selects a version of an asset based on the bucket it is part of, the asset needs to be processed for each bucket and will propagate independently through your CDN.\nTransient CDN effects, like caching, make that the results in this scenario not reflect the real-life behavior anymore. Suddenly, for a single ingest, the number of cache misses doubles, which negatively impacts the start up time, watch times, favoriting, likes etc. This effect is less outspoken if your CDN cache is not impacting your performance (e.g. you're Netflix and have high intent and large video buffers). But when you rely on loading video quickly, client-side A/B testing messes with your results.\n\nIn our Media Centric Experiment approach, assets are bucketed at ingest. With a large number of videos, differences in performance can be attributed to the treatment of both groups. Unfortunately, you can't just take the 'average' of a metric and assume things improve. We'll discuss the statistical processing (bootstrapping and a Z-test) we apply to confidently make conclusions on the performance of an experiment and make a decision to ship.\n\nIn this talk, we'll dive into the issue for A/B testing with video, how we set up our infrastructure to run Media Centric Experiment and explain (in laymen terms) the statistical procedure we follow. ",
+    "speakers": [
+      "Sebastiaan Van Leuven "
+    ]
+  },
+  "the-technical-in-technical-project-management": {
+    "title": "The “technical” in technical project management",
+    "description": "This talk will be geared to an audience of project and product managers and explain how I take an engineering-centric approach to project and product management and how that has helped my teams build a best in class VOD and live media pipeline. \n\nAt Disney Streaming Services formerly BAMTech, formerly MLB Advanced Media, we have excelled at being on the forefront of a changing live and VOD media landscape for years. As our company hones in on establishing ESPN+ and launching Disney+ in 2019 and beyond, we need to continue to charge forward but invest in the best and most compelling features and functions that fit our platform as these applications evolve. Often, laying the foundation to be able to deliver when it matters the most has to be done months or years in advance. In this session, I’d like to talk through how, as a project manager, or a product stakeholder of a media team you can build roadmaps, structure projects and work with engineers and engineering teams to create a resilient platform that anticipates future requirements and product goals. \n\nMy presentation will be unique because I will talk through my unique experiences; beginning with my career as a project manager working on the VOD ingest and processing pipeline for the launch of HBO Now. How I expanded into the live space and was the lead project manager in delivering live, ad supported NFL games via the BAMTech platform on Twitter and taking our DAI solution fully cloud-based and scalable. And how, over the course of several years as the project manager overseeing the delivery of our internally developed live encoding and packaging solution for ESPN+ and the MLB 2018 season, I anticipated requirements and delivered despite ambiguity. I now own Disney Streaming Services’s media engineering roadmap and lead a team of project managers responsible for ingesting, processing and distributing all of the media for the Disney+ application. I will speak to how working closely with engineers throughout my career has evolved my process and offer tips on how project and product managers looking to navigate our challenging field can do the same. ",
+    "speakers": [
+      "Alexandria Shealy"
+    ]
+  },
+  "av1-at-netflix": {
+    "title": "AV1 at Netflix",
+    "description": "AV1 is a video codec that was finalized by the Alliance for Open Media in June 2019. At Netflix, we believe that the AV1 ecosystem would benefit from an alternative clean and efficient encoder implementation. Having this vision, we have been jointly working with Intel on SVT-AV1 since August 2018. SVT-AV1 is an efficient open-source software encoder that can fully utilize the available system resources and, therefore, reduces the encoding time while delivering high compression efficiency. We believe that SVT-AV1 can be used for experiments on improving AV1 encoding and possibly as a platform for future video coding standards development, such as the research and development efforts towards AV2. To make this possible, we are implementing unit tests, a decoder that shares common code with the encoder, and worked on certain architectural changes. \n\nAnother aspect of codec adoption is content availability in this format. As was announced earlier, Netflix is planning to use AV1 for streaming to provide our members with a better viewing experience. At Netflix, we have been working towards making AV1 bitstreams available for testing and streaming. In this talk, we present the current status of AV1 deployment at Netflix and discuss practical aspects of using AV1 in an on-demand streaming service. ",
+    "speakers": [
+      "Andrey Norkin",
+      "Liwei Guo"
+    ]
+  },
+  "reinforcement-learning-for-abr": {
+    "title": "Reinforcement learning for ABR",
+    "description": "ABR algorithms have evolved over the years but most of them are still heuristics based systems, which factor in network throughput, buffer size, screen size, etc. Given the advancement of machine learning ecosystem in the last 5 years, we decided to explore using machine learning for this problem and got very exciting results.\n\nAt this talk, I will walk you through our journey of how we took an MIT thesis project that uses reinforcement learning for ABR and adapted it to our use-case and deployed it in production. I will explain why and how RL fits for this problem, compare the metrics against the previous implementation and discuss potential future experiment areas.",
+    "speakers": [
+      "Sahil Budhiraja"
+    ]
+  },
+  "apple-lowlatency-hls-update": {
+    "title": "Apple Low-Latency HLS Update",
+    "description": "Earlier this year, Apple announced Low-Latency HTTP Live Streaming, which significantly reduces the latency of live streams using industry-standard protocols and practices. The specification is evolving toward release, incorporating feedback from the community. Join Josh Tidsbury from Apple who will give an update on LL-HLS and address some common questions about it.",
+    "speakers": [
+      "Josh Tidsbury"
+    ]
+  },
+  "the-challenges-of-deploying-apples-low-latency-hls-in-real-life": {
+    "title": "The challenges of deploying Apple's Low Latency HLS In Real Life",
+    "description": "In this presentation we will discuss our learnings in incorporating Apple's Low Latency-HLS into the delivery workflows we run for global live sports events.   \n\nThe talk will cover the challenges we faced, the choices we made, and our end-to-end solution for including Low Latency-HLS in our live event streaming service.  \n\nWe will discuss the challenges of building a brand new delivery specification, that's still influx, into a high-availability, fully featured service that is accessed by millions of subscribers who expect the very best live streaming experience. \n\nThe talk will include:\n\n-Using CMAF for ingest - what is the state of support in the transcoders we tested\n-Handling partial fragments \n-Playlist deltas\n-Adding in server side ad insertion,  closed captions, multi-track audio, and regionalisation\n-Challenges with player compatibility, working with beta releases and player feature roll-out and supporting app store releases\n-Testing approach - lab testing and live trials\n-Addressing user expectations - what are the major QOE issues -  and what was the user feedback\n-Dual stream support with and without low latency\n-Multiple manifests and supporting legacy players - how and where to manage manifest state - and how the players behave\n-Serving streams using HTTP 2.0 push \n-Multiple CDN support and integration \n-Blocking manifest reloads\n-And finally how fast is it - the minimum latency have we achieved",
+    "speakers": [
+      "Marina Kalkanis"
+    ]
+  },
+  "analyzing-video-metrics-like-richard-feynman": {
+    "title": "Analyzing Video Metrics like Richard Feynman",
+    "description": "The famed physicist, Richard Feynman, often recounted a story from his youth about his father. They would walk together in the woods, and he would teach Richard about the birds in the forest. He would point out that this bird is called a \"brown-throated thrush\". In French, it's called a \"l'oiseau brun\", in Chinese it's called a \"xiaoniao\", and so forth. But after learning all those names, you still know nothing about the bird. \n\nThe way that we analyze video metrics often falls into this same trap, in which we learn the names of things but we fail to properly understand them. In this talk, I will review the major QoS metrics that everyone is familiar with, such as video rebuffering, startup time, watch time, and I will discuss the intuition behind some robust mathematical methods you can use to gain more insight into your data. When does a spike in startup time really matter, and when is it just random noise? How do you test changes in multiple metrics when you edit your encoding settings? How do you know when your statistics are lying to you?\n\nThese might sound like hard questions, but with a greater fundamental understanding of video statistics, these questions and many others become much easier to solve. The brilliance of Feynman's pedagogy was not the material he taught, but the tools he gave his listeners to solve broad ranges of difficult problems. I hope this talk will emulate that same effect for my audience.\n\n\n",
+    "speakers": [
+      "Ben Dodson"
+    ]
+  },
+  "a-stateless-service-for-audio-processing": {
+    "title": "A Stateless Service for Audio Processing",
+    "description": "Let's say you want to process audio in real-time. You could have a video conference involving multiple participants that you want to broadcast live to a large audience - Twitter, Instagram, and Facebook all have products like this. For ease of playback, instead of dealing with multiple independent audio streams, you could take in multiple audio sources and mix them together, and encode for streaming. You might also want to create a number of transcoded variants for adaptive playback in different network conditions. Simple enough?\n\nBut what if your transcode server goes down and you need to switch to another one? Or an ill-behaved client starts sending you timestamps from last Tuesday? Or you have inconsistent latency and network conditions between audio sources?  In other words, what if you need contextual information to perform the audio processing?\n\nYou could design a service that handles long-running audio sessions, which maintains the necessary context to perform transcode and mixdown. Audio codecs like AAC can require information from the past in order to prime the encoder properly and avoid artifacts. So, if your session is interrupted, you’ll need this information in order to resume. A stateful service like this is tricky because it is difficult to switch instances without somehow transferring context.\n\nStateless services have a number of advantages over their stateful friends: They are deployable without draining - clients can just point to a new instance and keep going where they left off, and you don't need to wait for long-running sessions to end. And they are generally simpler to implement and don't have to depend on any external services to transfer context.\n\nIn this talk we’ll discuss the stateless, real-time audio processing service we use at Periscope.",
+    "speakers": [
+      "Michael Hill"
+    ]
+  },
+  "nonstandard-codecs-with-standard-webrtc": {
+    "title": "Non-Standard Codecs With Standard WebRTC",
+    "description": "WebRTC is a great protocol for low-latent streaming, particularly in one-to-one or one-to-a-few workflows.  However, there are only a few codecs that are supported in the prevalent WebRTC libraries out there, and the ones that are supported now haven't always been supported. \n\nA use case for security cameras arose well before H264 support was prevalent and so we needed to provide a way of peering with WebRTC while streaming content encoded as H264/AAC.\n\nThe talk will go into the details of the two different solutions we came up with for solving this problem:\n1) for mobile: modify the library to extract RTP packets or raw frames at relevant stages and use external player libraries (VLC, Exo Player, etc) to do the actual decode and rendering\n2) for browsers: use the datachannel mechanism to send FMP4 video/audio data and then proxy that into MSE, similar to how CMAF works now.\n\nThe talk would then look forward to how this could be applied to non-supported codecs like HEVC and as a bridge to native AV1 support.\n\nIf time allows the talk would finish with observations and lessons learned from doing this in production.",
+    "speakers": [
+      "Bryan Meissner"
+    ]
+  },
+  "edge-transcoding": {
+    "title": "Edge Transcoding",
+    "description": "Satellite bandwidth to planes, trains, (and automobiles? or maybe ships) is super expensive. Codecs like AV1 and HEVC can provide real financial benefit for satellite transport of live TV. It can be challenging, however, to deliver state-of-the-art when, at the far end, you must ultimately provide service to devices which aren't part of your closed system (e.g., customer phones, tablets, laptops and/or embedded screens which may be years or decades old). \n\nEdge transcoding (e.g., on a plane) may not win you any video quality awards, but it can significantly lower operating costs and put your technology roadmap back in your own control.\n\nAt Gogo, we multicast live TV using HEVC over our satellite network. On-board each plane, we transcode 12+ channels to H264, MPEG2 (and pass-through HEVC) to provide compatibility with every variant of embedded and end-user devices. All of this is done using ffmpeg + vaapi.\n\nWhen AV1 comes of age, we can migrate to AV1 from HEVC without worry of breaking compatibility with existing customer and embedded devices.",
+    "speakers": [
+      "Ty Bekiares"
+    ]
+  },
+  "cmaf-and-dashif-live-ingest-protocol": {
+    "title": "CMAF and DASH-IF Live ingest protocol",
+    "description": "We present the DASH-IF live ingest protocol specification. It was developed in collaboration with live encoder vendors, cloud service providers and content delivery networks in DASH industry forum. It features two interfaces, the first CMAF ingest can be used to ingest CMAF chunks to a live packager for DASH and/or HLS. The second interface supports ingest of DASH and HLS presentation to a passive origin or content delivery network. We detail some of the benefits of this protocol, including low latency, timed metadata support and redundancy and fault tolerance. Last, we detail the open source implemenatation of CMAF ingest we made available. The well defined specification of live ingest will help the industry in deploying live streaming at scale using components from different vendors,, Further by exploiting CMAF many synergies between HLS and DASH protocols are obtained.",
+    "speakers": [
+      "Rufael Mekuria"
+    ]
+  },
+  "japanese-captions": {
+    "title": "Japanese Captions",
+    "description": "Captions are used by people all over the world on a regular basis. Most of us are familiar with regular horizontal captions at the bottom of the screen, but did you know that in Japan a common position for captions is vertically on the right or left side of the screen? Come learn more about what Japanese audiences need out of captions as well as how captioning standard likes IMSC and WebVTT support these features.",
+    "speakers": [
+      "Gary Katsevman"
+    ]
+  },
+  "a-paradigm-shift-in-codec-standards-mpeg5-part-2-lcevc-higher-quality-with-any-codec-maintaining-decoder-compatibility": {
+    "title": "A paradigm shift in codec standards: MPEG-5 Part 2 LCEVC, higher quality with any codec, maintaining decoder compatibility",
+    "description": "MPEG recently did something it has never done before. \n\nDespite the surging demand for video, it is often difficult – or prohibitively costly – to deliver high video quality to all end users. Next-generation codecs provide a solution, but their use at scale requires a long wait for a sufficient proportion of devices to be able to decode them. As we have learnt from the long rollout of HEVC and VP9, there still remains a long tail of devices that are still only able to decode the previous generation codecs. This challenge is only becoming worse as the fragmentation and number of new and forthcoming codec options multiplies.  No wonder that many large operators were looking for novel solutions to this problem, and in 2018 a broad array of leaders in the industry asked MPEG to pursue a new direction.\n\nAfter a successful call for proposals, in March 2019 the draft standard specification of MPEG-5 Part 2 Low Complexity Enhancement Video Codec (LCEVC) came to life.  \n\nInstead of being an entirely new video codec (“yet another codec”), LCEVC is a new tool to bridge the gap to any subsequent generation of codecs.  More specifically, LCEVC is a codec-agnostic and low-complexity capability extension for video codecs. \n\nThe concept is simple: LCEVC combines with <pick your codec format of choice> in such a way that the combination of the two achieves a generational step-change in compression efficiency without any increase (and in most cases with a decrease) in encoding or decoding complexity. What’s more, LCEVC can be decoded via light software processing, and even via HTML5, meaning that the vast majority of devices on the planet can immediately deliver next-generation video experiences to all consumers, at equal or lower costs.\nAs soon as the next generation codecs become deployable, LCEVC can enhance their performance and reduce their computational complexity, effectively enhancing their business case.\n\nThis presentation will include real performance data and comprehensive benchmarks for live and VoD streaming, illustrating the compression quality and encoding complexity benefits achievable with MPEG-5 Part 2 LCEVC as an enhancement to AVC/h.264, HEVC and AV1. \nThe implications for video developers will be discussed in terms of how a video encoding, delivery and player pipeline can be updated, along with the broader business benefits that the industry should expect.",
+    "speakers": [
+      "Guido Meardi"
+    ]
+  },
+  "qoe-impact-from-router-buffer-sizing-and-active-queue-management": {
+    "title": "QoE Impact from Router Buffer sizing and Active Queue Management",
+    "description": "Have you heard about bufferbloat? Bufferbloat happens when network equipments buffer too many packets under congestion, causing undesirably high latency in the network. \n\nIn this talk, we will share our QoE observations based on our experiments with various router buffer size in our backbone routers and applying active queue management (AQM) in home routers. Our results show that when setting the router buffer size appropriately, we not only reduce latency (by 1 second on median), but we also greatly improve interruption rate (by 30%). \n\nSettings inside network routers often seem unrelated from video quality, but in fact they have tremendous amount of impact on QoE. We hope this talk can draw more attention from the video community on the importance of router buffer management in various networks. ",
+    "speakers": [
+      "Te-Yuan Huang"
+    ]
+  },
+  "javascript-in-my-native-video-apps-core-streaming-library-its-more-likely-than-you-think": {
+    "title": "JavaScript? In *my* native video app's core streaming library? It's more likely than you think.",
+    "description": "The nightmare of server-driven streaming is that you have to have workarounds for every client bug baked in. Also the client knows things that you don't know.\n\nThe nightmare of client-driven streaming is that your streaming architecture becomes inflexible, since you can't break old clients, so iteration time grinds to a halt. Also the server knows things that you don't know.\n\nAt YouTube, we want to simultaneously go fast and micro-optimize the shit out of everything. Introducing new protocols like ultra-low is no mean feat on its own, but what happens when you need to fix a bug that breaks old clients using the protocols? What if you have a new optimization that requires an update? Also, where do you put all that SWEET MACHINE LEARNING you have dripping from every TPU in the fleet?\n\nWe realized that each of our clients is basically a giant steaming pile of workarounds anyway. Our experience with the HTML5 player is that you can do quite a few workarounds if you write efficient JavaScript and carefully layer things out - we have one player that runs every feature, on every device, scaling from the newest high-end game consoles to the worst 2012 TVs and smartphones, and it's fine.\n\nSo basically we're building a cleaner, leaner Media Source into our native clients, plugging in a JavaScript workaround layer on top, then building a protocol engine in JS on top of that which is tightly coupled to server releases and can be updated in sync with new protocol revs. This gives us the flexibility to slosh whatever ML sauce we come up with, whereever we need it to go.\n\nThis is a super forward looking talk. I don’t have any numbers, and probably won’t have anything even by the time I write the talk. So be warned.\n\nNarrator: He probably will have the numbers...",
+    "speakers": [
+      "Steve Robertson"
+    ]
+  },
+  "doing-serverside-ad-insertion-on-live-sports-for-253m-concurrent-users": {
+    "title": "Doing Server-Side Ad Insertion on Live Sports for 25.3M Concurrent Users",
+    "description": "What’s really the biggest streaming event ever? Superbowl? What could be bigger? Felix’s jump from the stratosphere? Fifa World Cup of 2018?\n\nLet me introduce you to, India and it’s Cricket fans. In 2019, there were two large cricket tournaments earlier this year - IPL & ICC World Cup 2019. Combined together we had 100+ games across 8 different teams each lasting for 4-10 hours with a lot of action. Cricket attracts about 600M+ users alone in India over broadcast.  But that's just half the story!\n\nBoth of these events were streamed live to an audience of >100 million users per match that peaked in the 2019 Season Semi-final at 25.3 million concurrent users across 10 platforms and diverse carrier networks from 2G to 4G & broadband. Now that's another story - but not the story we want to tell in this talk.\n\nEach of these games has the most intense Ad Serving schedule with over a 100 ad breaks of 4 kinds,  serving an audience of  >100 million Unique Video Viewers in about 5-10 hours adding up to - an inventory of over 2 Billion Ad Impressions served. Even more exciting is that these impressions are served for over 100 different brands with complex targeting rules including demographics like Age groups, Gender, Location and Language.\n\nWelcome to Hotstar, India’s youngest and smallest team of engineers who dare.\n\nI am Ashutosh Agarwal, Architect & Lead Engineer of our SSAI Technology. I would present a day in the life of Ad Serving in an IPL/WorldCup Game via our SSAI service.\n\nThis talk will cover the following elements: \n\nOverview of live streaming in India - In India, people consuming live sports come from all the parts, from metros to rural areas. This means that network connections are very choppy and unpredictable.\n\nChallenges with client-side insertion on the cricket - In cricket, the ad break pattern and duration are unpredictable, making this simple ad-insertion more complex\n\nDesigning Server-side ad insertion using cohort technique to make it operate at scale, without introducing any latency from live action on the field. \n\nBuilding a real-time feedback system for near accurate delivery of ads at this scale of operation.\n\nFuture of Live sports ad insertion at hotstar - Automating the entire playout operations.",
+    "speakers": [
+      "Ashutosh Agrawal"
+    ]
+  },
+  "litr-linkedin-transformer--and-open-source-library-to-transcode-and-modify-video-on-android": {
+    "title": "LiTr (LinkedIn Transformer) - and open source library to transcode and modify video on Android",
+    "description": "At LinkedIn we created a library that uses Android's MediaCodec APIs to transcode video. We use it to reduce the resolution and bitrate of user's video on device before uploading it, to significantly reduce upload time without reduction in consumption quality. \n\nWe are in process of open sourcing it and designing new APIs for it to allow easy addition of new functionality (muxing/demuxing, filters, etc.) By Demuxed, library will be open sourced and this talk will about its architecture, out of box capabilities, and how to contribute to it. Our vision for it is to offer production quality (well tested, analytics reporting, etc.) video/audio processing library to open source community as a solid foundation for video processing innovation. This has been an interesting project which would be of interest to mobile video developers, and probably not mobile developers as well - something like hardware accelerated ffmpeg lite.",
+    "speakers": [
+      "Izzat Bahadirov"
+    ]
+  },
+  "there-and-back-again-reinventing-udp-streaming-with-quic": {
+    "title": "There and back again: reinventing UDP streaming with QUIC",
+    "description": "In the not too distant past, linear and VOD streaming was serviced by good old  UDP-based protocols such as RTP. These delivered content to a relatively small and non-diverse population of audiences and clients.  As habits, problems and opportunities shifted, the industry embraced HTTP-based streaming for delivery of over-the-top services. These were great because they \"just worked\", piggybacking on existing infrastructure and the web platform.  HTTP isn't perfect but the technology fitted the need of the day. In the world of Internet protocols a different set of challenges led HTTP on the reverse path from TCP to UDP. QUIC, a new always secure transport protocol based on UDP. It is in the final stages of standardization at the IETF and will be released alongside HTTP/3, which takes HTTP/2's binary syntax and tweaks a few things. This sounds exciting and bold but in reality is just a variant of what Google has been using for YouTube for years.  HTTP/3 for video streaming may improve performance or quality of experience for some consumers. However, this is yet another option among a wardrobe stuffed with them; time will tell how feasible it is for operators to realise this variant of delivery.\n\nSo is that the end of the story? Are we there and back again with UDP? I put it to you that we aren't, yet. HTTP is practical but unambitious. As the industry gains more maturity it is butting up against its limits. As consumer habits change and their expectations grow we begin to hit the limit of HTTP's technical capability to offer new and exciting experiences without horrible hacks or layers upon layers of technical debt. This talk will explain some of the capabilities of QUIC and explore the great blue yonder that can open up. By returning to our roots of \"just a transport\", we can realise lower-latency, better scalability and more interesting use cases. We'll touch on the seeds that are germinating today and highlight the gaps or pitfalls that need to be overcome to make these hopes a reality.",
+    "speakers": [
+      "Lucas Pardue"
+    ]
+  },
+  "adventures-with-vp9": {
+    "title": "Adventures with VP9",
+    "description": "As a modern codec with more advanced coding tools at its disposal, VP9 is a huge step-up in compression efficiency, generally outperforming H.264 by 20~30% on the BD-rate scale. However, the Android fragmentation problem is preventing more widespread adoption on mobile. To improve VP9 playback coverage, we propose a hybrid approach utilizing both system hardware decoders where available, and optimized in-app software VP9 decoders assisted by GPU-based color space conversion. In addition, a device capability framework collects and aggregates device VP9 playback capability and performance data by device model and OS version to help select the optimal playback path.",
+    "speakers": [
+      "Haixia Shi",
+      "Zen Xu"
+    ]
+  },
+  "three-roads-to-jerusalem": {
+    "title": "Three Roads to Jerusalem",
+    "description": "OTT is tired of the cliches about it being slower than broadcast. The rush to accelerate has now brought us three formats for achieving low latency with segmented media - DASH ULL, LHLS and ALHLS. This session compares these approaches from starting logic, request rate, ABR switching, cache efficiency and CDN-friendliness perspectives. Which road should the wise men travel as they bear gifts of buffer length, stability and time-to-first-frame? A solution is proposed which allows for concurrent support of all three formats by a single set of A/V segments and a common workflow, allowing peaceful coexistence of all three religions.",
+    "speakers": [
+      "Will law"
+    ]
+  }
+}

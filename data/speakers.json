@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Alexandria Shealy",
+    "company": "Disney",
+    "talk": "the-technical-in-technical-project-management"
+  },
+  {
+    "name": "Andrey Norkin",
+    "company": "Netflix",
+    "talk": "av1-at-netflix"
+  },
+  {
+    "name": "Andy Warman",
+    "company": "Harmonic",
+    "talk": "smpte-st-2110--highest-quality-lowest-latency-pro-video-over-ip"
+  },
+  {
+    "name": "Ashutosh Agrawal",
+    "company": "Hotstar",
+    "talk": "doing-serverside-ad-insertion-on-live-sports-for-253m-concurrent-users"
+  },
+  {
+    "name": "Ben Dodson",
+    "company": "Snapchat",
+    "talk": "analyzing-video-metrics-like-richard-feynman"
+  },
+  {
+    "name": "Bryan Meissner",
+    "company": "Comcast",
+    "talk": "nonstandard-codecs-with-standard-webrtc"
+  },
+  {
+    "name": "Charles Sonigo",
+    "company": "Streamroot",
+    "talk": "building-an-automated-testing-suite-how-to-gain-confidence-that-your-release-will-not-break-playback-for-any-platformplayerosformat-combination"
+  },
+  {
+    "name": "Chris Ellsworth",
+    "company": "Instagram",
+    "talk": "hevc-upload-experiments"
+  },
+  {
+    "name": "Christopher Kennedy",
+    "company": "Ellation",
+    "talk": "the-magic-of-human-visual-system-perception"
+  },
+  {
+    "name": "Gary Katsevman",
+    "company": "Brightcove",
+    "talk": "japanese-captions"
+  },
+  {
+    "name": "Guido Meardi",
+    "company": "V-Nova",
+    "talk": "a-paradigm-shift-in-codec-standards-mpeg5-part-2-lcevc-higher-quality-with-any-codec-maintaining-decoder-compatibility"
+  },
+  {
+    "name": "Haixia Shi",
+    "company": "Facebook",
+    "talk": "adventures-with-vp9"
+  },
+  {
+    "name": "Izzat Bahadirov",
+    "company": "LinkedIn",
+    "talk": "litr-linkedin-transformer--and-open-source-library-to-transcode-and-modify-video-on-android"
+  },
+  {
+    "name": "Javier Brines Garcia",
+    "company": "BMAT",
+    "talk": "the-dos-and-donts-about-streaming-security--confessions-from-a-signal-hacking-expert",
+    "nogoogle": true
+  },
+  {
+    "name": "Jean-Baptiste Louazel",
+    "company": "Streamroot",
+    "talk": "building-an-automated-testing-suite-how-to-gain-confidence-that-your-release-will-not-break-playback-for-any-platformplayerosformat-combination"
+  },
+  {
+    "name": "John Saxton",
+    "company": "Amazon Web Services",
+    "talk": "designing-for-live-stream-failure-with-seamless-switching"
+  },
+  {
+    "name": "Josh Tidsbury",
+    "company": "Apple",
+    "talk": "apple-lowlatency-hls-update"
+  },
+  {
+    "name": "Konstantin Wilms",
+    "company": "Deluxe",
+    "talk": "largescale-media-archive-migration-to-the-cloud"
+  },
+  {
+    "name": "Kyle Boutette",
+    "company": "Cloudflare",
+    "talk": "edge-compute"
+  },
+  {
+    "name": "Liwei Guo",
+    "company": "Netflix",
+    "talk": "av1-at-netflix"
+  },
+  {
+    "name": "Lucas Pardue",
+    "company": "Cloudflare",
+    "talk": "there-and-back-again-reinventing-udp-streaming-with-quic"
+  },
+  {
+    "name": "Marina Kalkanis",
+    "company": "M2A Media",
+    "talk": "the-challenges-of-deploying-apples-low-latency-hls-in-real-life"
+  },
+  {
+    "name": "Michael Hill",
+    "company": "Twitter",
+    "talk": "a-stateless-service-for-audio-processing"
+  },
+  {
+    "name": "Nick Chadwick",
+    "company": "Mux",
+    "talk": "super-resolution-the-scaler-of-tomorrow-here-today"
+  },
+  {
+    "name": "Richard Fliam",
+    "company": "Bitmovin",
+    "talk": "objectionable-uses-of-objective-quality-metrics"
+  },
+  {
+    "name": "Roderick Hodgson",
+    "company": "Amber Video",
+    "talk": "is-now-the-time-to-solve-the-deepfake-threat"
+  },
+  {
+    "name": "Rufael Mekuria",
+    "company": "Unified Streaming",
+    "talk": "cmaf-and-dashif-live-ingest-protocol"
+  },
+  {
+    "name": "Ryan B Harvey",
+    "company": "Ted",
+    "talk": "modeling-the-conceptual-structure-of-ffmpeg-in-javascript"
+  },
+  {
+    "name": "Sahil Budhiraja",
+    "company": "Hotstar",
+    "talk": "reinforcement-learning-for-abr"
+  },
+  {
+    "name": "Sarah Allen",
+    "company": "Veriskope",
+    "talk": "rtmp-web-video-innovation-or-web-10-hack-how-did-we-get-to-now"
+  },
+  {
+    "name": "Sebastiaan Van Leuven ",
+    "company": "Twitter",
+    "talk": "ab-user-testing-when-your-cdn-cache-messes-with-your-results"
+  },
+  {
+    "name": "Shawn Przybilla",
+    "company": "Amazon Web Services",
+    "talk": "designing-for-live-stream-failure-with-seamless-switching"
+  },
+  {
+    "name": "Steve Robertson",
+    "company": "Youtube",
+    "talk": "javascript-in-my-native-video-apps-core-streaming-library-its-more-likely-than-you-think"
+  },
+  {
+    "name": "Te-Yuan Huang",
+    "company": "Netflix",
+    "talk": "qoe-impact-from-router-buffer-sizing-and-active-queue-management",
+    "customphotourl": "https://demuxed-headshots-experiment.imgix.net/te-yuan-huang.jpg?w=200&h=200&fp-x=0.47&fp-y=0.36&fit=crop&fp-z=5&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Ty Bekiares",
+    "company": "Gogo",
+    "talk": "edge-transcoding"
+  },
+  {
+    "name": "Will law",
+    "company": "Akamai",
+    "talk": "three-roads-to-jerusalem"
+  },
+  {
+    "name": "Zachary Cava",
+    "company": "Hulu",
+    "talk": "scalable-peruser-ad-insertion-in-live-ott"
+  },
+  {
+    "name": "Zen Xu",
+    "company": "Facebook",
+    "talk": "adventures-with-vp9"
+  }
+]

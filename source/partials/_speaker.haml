@@ -1,0 +1,22 @@
+- unless speaker.spacer
+  %li.speakers-list__card{id: speaker.name.downcase.split(' ').join('-')}
+    %div.speakers-list__img-wrap
+      - if speaker.missingphoto
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+      - elsif speaker.customphotourl
+        = image_tag(speaker.customphotourl, alt: "", class: "speakers-list__img")
+      - else
+        = image_tag("https://demuxed-headshots-experiment.imgix.net/#{speaker.name.downcase.split(' ').join('-')}.jpg?w=200&h=200&fit=facearea&facepad=2&auto=format,compress&q=70", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name
+    - if speaker.nogoogle
+      = "<!--googleoff: index-->#{speaker.name}<!--googleon: index-->"
+    - else
+      = speaker.name
+    %h4.speakers-list__company= speaker.company
+    %p.speakers-list__talk-title
+      = data.talks[speaker.talk].title
+      - if data.talks[speaker.talk].speakers.length > 1
+        %span.joint (joint talk)
+    %a.speakers-list__btn.talk-modal-link{data: {custom: {open: speaker.talk}}} Talk Overview
+- else
+  %li.speakers-list__card

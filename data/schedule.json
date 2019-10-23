@@ -1,0 +1,251 @@
+{
+  "day_1_morning": [
+    {
+      "start": "08:30",
+      "end": "09:45",
+      "title": "Check-In"
+    },
+    {
+      "start": "08:30",
+      "end": "09:30",
+      "title": "Women's Breakfast"
+    },
+    {
+      "start": "09:45",
+      "end": "10:00",
+      "title": "Opening Remarks"
+    },
+    {
+      "start": "10:00",
+      "end": "10:25",
+      "talk": "is-now-the-time-to-solve-the-deepfake-threat"
+    },
+    {
+      "start": "10:25",
+      "end": "10:50",
+      "talk": "super-resolution-the-scaler-of-tomorrow-here-today"
+    },
+    {
+      "start": "10:50",
+      "end": "11:00",
+      "talk": "the-dos-and-donts-about-streaming-security--confessions-from-a-signal-hacking-expert"
+    },
+    {
+      "start": "11:00",
+      "end": "11:15",
+      "title": "Break"
+    },
+    {
+      "start": "11:15",
+      "end": "11:40",
+      "talk": "modeling-the-conceptual-structure-of-ffmpeg-in-javascript"
+    },
+    {
+      "start": "11:40",
+      "end": "11:50",
+      "talk": "the-magic-of-human-visual-system-perception"
+    },
+    {
+      "start": "11:50",
+      "end": "12:15",
+      "talk": "objectionable-uses-of-objective-quality-metrics"
+    },
+    {
+      "start": "12:15",
+      "end": "12:25",
+      "talk": "rtmp-web-video-innovation-or-web-10-hack-how-did-we-get-to-now"
+    },
+    {
+      "start": "12:25",
+      "end": "13:45",
+      "sponsor_image": "sponsor-logos/prime-video.png",
+      "sponsor_url": "https://www.primevideo.com/?ref=demuxed",
+      "sponsor_alt_text": "Amazon Prime Video",
+      "title": "Lunch"
+    }
+  ],
+  "day_1_afternoon": [
+    {
+      "start": "13:45",
+      "end": "14:10",
+      "talk": "largescale-media-archive-migration-to-the-cloud"
+    },
+    {
+      "start": "14:10",
+      "end": "14:20",
+      "talk": "hevc-upload-experiments"
+    },
+    {
+      "start": "14:20",
+      "end": "14:45",
+      "talk": "scalable-peruser-ad-insertion-in-live-ott"
+    },
+    {
+      "start": "14:45",
+      "end": "15:10",
+      "talk": "smpte-st-2110--highest-quality-lowest-latency-pro-video-over-ip"
+    },
+    {
+      "start": "15:10",
+      "end": "15:25",
+      "title": "Break"
+    },
+    {
+      "start": "15:25",
+      "end": "15:50",
+      "talk": "building-an-automated-testing-suite-how-to-gain-confidence-that-your-release-will-not-break-playback-for-any-platformplayerosformat-combination"
+    },
+    {
+      "start": "15:50",
+      "end": "16:00",
+      "talk": "edge-compute"
+    },
+    {
+      "start": "16:00",
+      "end": "16:25",
+      "talk": "designing-for-live-stream-failure-with-seamless-switching"
+    },
+    {
+      "start": "16:25",
+      "end": "16:50",
+      "talk": "ab-user-testing-when-your-cdn-cache-messes-with-your-results"
+    },
+    {
+      "start": "16:50",
+      "end": "17:05",
+      "title": "Break"
+    },
+    {
+      "start": "17:05",
+      "end": "17:30",
+      "talk": "the-technical-in-technical-project-management"
+    },
+    {
+      "start": "17:30",
+      "end": "17:55",
+      "talk": "av1-at-netflix"
+    },
+    {
+      "start": "17:55",
+      "end": "18:20",
+      "talk": "reinforcement-learning-for-abr"
+    },
+    {
+      "start": "18:20",
+      "end": "18:35",
+      "talk": "apple-lowlatency-hls-update"
+    }
+  ],
+  "day_2_morning": [
+    {
+      "start": "10:00",
+      "end": "10:25",
+      "talk": "the-challenges-of-deploying-apples-low-latency-hls-in-real-life"
+    },
+    {
+      "start": "10:25",
+      "end": "10:35",
+      "talk": "analyzing-video-metrics-like-richard-feynman"
+    },
+    {
+      "start": "10:35",
+      "end": "11:00",
+      "talk": "a-stateless-service-for-audio-processing"
+    },
+    {
+      "start": "11:00",
+      "end": "11:10",
+      "talk": "nonstandard-codecs-with-standard-webrtc"
+    },
+    {
+      "start": "11:10",
+      "end": "11:25",
+      "title": "Break"
+    },
+    {
+      "start": "11:25",
+      "end": "11:50",
+      "talk": "edge-transcoding"
+    },
+    {
+      "start": "11:50",
+      "end": "12:15",
+      "talk": "cmaf-and-dashif-live-ingest-protocol"
+    },
+    {
+      "start": "12:15",
+      "end": "12:25",
+      "talk": "japanese-captions"
+    },
+    {
+      "start": "12:25",
+      "end": "12:50",
+      "talk": "a-paradigm-shift-in-codec-standards-mpeg5-part-2-lcevc-higher-quality-with-any-codec-maintaining-decoder-compatibility"
+    },
+    {
+      "start": "12:50",
+      "end": "14:00",
+      "sponsor_image": "sponsor-logos/encodingdotcom.png",
+      "sponsor_url": "https://www.encoding.com/?ref=demuxed",
+      "sponsor_alt_text": "Encoding.com",
+      "title": "Lunch"
+    }
+  ],
+  "day_2_afternoon": [
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "title": "Lightning Talks"
+    },
+    {
+      "start": "15:00",
+      "end": "15:25",
+      "talk": "qoe-impact-from-router-buffer-sizing-and-active-queue-management"
+    },
+    {
+      "start": "15:25",
+      "end": "15:40",
+      "title": "Break"
+    },
+    {
+      "start": "15:40",
+      "end": "16:05",
+      "talk": "javascript-in-my-native-video-apps-core-streaming-library-its-more-likely-than-you-think"
+    },
+    {
+      "start": "16:05",
+      "end": "16:30",
+      "talk": "doing-serverside-ad-insertion-on-live-sports-for-253m-concurrent-users"
+    },
+    {
+      "start": "16:30",
+      "end": "16:40",
+      "talk": "litr-linkedin-transformer--and-open-source-library-to-transcode-and-modify-video-on-android"
+    },
+    {
+      "start": "16:40",
+      "end": "16:55",
+      "title": "Break"
+    },
+    {
+      "start": "16:55",
+      "end": "17:20",
+      "talk": "there-and-back-again-reinventing-udp-streaming-with-quic"
+    },
+    {
+      "start": "17:20",
+      "end": "17:30",
+      "talk": "adventures-with-vp9"
+    },
+    {
+      "start": "17:30",
+      "end": "17:55",
+      "talk": "three-roads-to-jerusalem"
+    },
+    {
+      "start": "17:55",
+      "end": "18:00",
+      "title": "Closing Remarks"
+    }
+  ]
+}

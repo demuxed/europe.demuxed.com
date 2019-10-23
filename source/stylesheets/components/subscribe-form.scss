@@ -1,0 +1,55 @@
+.subscribe-card {
+  background-color: #ffffff;
+  color: rgb(47, 28, 70);
+  font-size: 0.933333rem;
+  font-family: ocr-a-std, monospace;
+  font-weight: 500;
+  line-height: 1.6em;
+  padding: 2em;
+  text-align: center;
+
+  .subscribe {
+    padding: 2em;
+  }
+
+  .email-input {
+    font-size: 0.8rem;
+    line-height: 1.91667;
+    font-family: ocr-a-std, monospace;
+    -webkit-appearance: none;
+    background-color: rgb(239, 234, 243);
+    width: 74%;
+    margin-right: 10px;
+    border-radius: 0px;
+    padding: 0.4em 1em;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+  }
+  .email-input:focus {
+    background-color: rgb(214, 202, 224);
+    transition: all 0.2s ease-out 0s;
+  }
+
+  .submit-button {
+    font-family: ocr-a-std, monospace;
+    font-weight: 600;
+    color: rgb(46, 28, 70);
+    letter-spacing: 0.2em;
+    background-color: rgb(252, 123, 251);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1.91667;
+    width: 21%;
+    text-align: center;
+    border-width: 0px;
+    padding: 0.5em 1em;
+  }
+  .submit-button:hover {
+    background-color: rgb(95, 46, 142);
+    color: rgb(252, 123, 251);
+  }
+}
