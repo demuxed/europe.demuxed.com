@@ -26,10 +26,6 @@
   background-position: 0 0;
   background-size: 147px;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
   @include mq($tiny) {
   }
 
