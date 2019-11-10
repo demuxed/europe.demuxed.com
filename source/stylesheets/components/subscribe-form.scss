@@ -26,6 +26,8 @@
     border-color: initial;
     border-image: initial;
     outline: none;
+    padding-top: 7px;
+    padding-bottom: 4px;
   }
   .email-input:focus {
     color: $brand-purple;
@@ -46,6 +48,9 @@
     text-align: center;
     border-width: 0px;
     padding: 0.5em 1em;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    padding-left: 18px;
   }
   .submit-button:hover {
     background-color: #a78bbe;
@@ -54,6 +59,7 @@
 }
 
 .sponsor {
+  font-size: 0.9rem;
   display: block;
   margin: 3em 0;
 }
