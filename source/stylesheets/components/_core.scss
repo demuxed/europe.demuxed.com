@@ -99,5 +99,18 @@ h5 {
     clear: both;
     font-size: 1rem;
     margin-bottom: 3em;
+    text-align: center;
+
+    @include mq($med-large) {
+      text-align: left;
+    }
+
+    .break {
+      display: none;
+      text-align: center;
+      @include mq($med-large) {
+        display: block;
+      }
+    }
   }
 }
