@@ -100,7 +100,6 @@ h5 {
 
     .break {
       display: none;
-      text-align: center;
       @include mq($med-large) {
         display: block;
       }
