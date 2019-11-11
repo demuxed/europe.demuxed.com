@@ -83,7 +83,7 @@ h5 {
     text-align: center;
 
     @include mq($med-large) {
-      width:600px;
+      width:540;
       text-align: left;
     }
   }

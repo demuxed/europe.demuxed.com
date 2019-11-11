@@ -35,7 +35,7 @@
   }
 
   .email-input {
-    width: 280px;
+    width: 250px;
     font-size: 0.8rem;
     line-height: 2em;
     font-family: ocr-a-std, monospace;
@@ -75,13 +75,12 @@
     padding-top: 7px;
     padding-bottom: 4px;
     padding-left: 18px;
-    max-width: 280px;
     margin-top: 10px;
-    width: 280px;
+    width: 250px;
 
     @include mq($wide) {
       margin-top: 0px;
-      width:195px;
+      width:220px;
     }
   }
   .submit-button:hover {
