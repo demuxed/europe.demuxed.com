@@ -1,20 +1,13 @@
 
-
 .background {
   position: absolute;
-  // background-color: #ffffff;
   width: 100%;
   height: 100%;
-  // background-image: url('/images/europe.svg');
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: left top;
   z-index:-1;
   left:400px;
-
-  @include mq($medium) {
-    // left:400px;
-  }
 
   @include mq($med-large) {
     background-image: url('/images/europe.svg');
@@ -31,16 +24,10 @@
     background-position: right top;
     left:100px;
   }
-
-  @include mq($wide) {
-    // left:0px;
-    //padding-left:100px;
-  }
 }
 
 
 .subscribe-card {
-  // color: rgb(47, 28, 70);
   font-size: 1;
   font-family: ocr-a-std, monospace;
   font-weight: 500;
