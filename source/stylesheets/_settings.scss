@@ -35,8 +35,11 @@ $med-large: 960;
 $large: 1100;
 $x-large: 1170;
 $xl-large: 1400;
-$wide: 1600;
+$wide: 1700;
 $super-wide: 1800;
+
+// Magix width to switch background behaviours at.
+$unstick-bg: 1485;
 
 // Animation
 $transition-speed: all 0.2s ease-out;
