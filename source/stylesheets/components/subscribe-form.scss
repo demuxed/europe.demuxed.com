@@ -5,20 +5,25 @@
   font-weight: 500;
   line-height: 1.6em;
   text-align: left;
+  display: flex;
 
   input::placeholder {
     color: #ffffff;
   }
 
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .email-input {
-    min-width: 50%;
     font-size: 0.8rem;
     line-height: 2em;
     font-family: ocr-a-std, monospace;
     -webkit-appearance: none;
     background-color: #a78bbe;
     color: #ffffff;
-    margin-right: 10px;
     border-radius: 0px;
     padding: 0.5em 1em;
     border-width: initial;
@@ -26,11 +31,14 @@
     border-color: initial;
     border-image: initial;
     outline: none;
-  }
-  .email-input:focus {
-    color: $brand-purple;
-    background-color: #ffffff;
-    transition: all 0.2s ease-out 0s;
+    margin-bottom: 0.5em;
+    border: 1px solid $brand-purple;
+
+    &:focus {
+      color: $brand-purple;
+      background-color: #ffffff;
+      transition: all 0.2s ease-out 0s;
+    }
   }
 
   .submit-button {
@@ -46,14 +54,31 @@
     text-align: center;
     border-width: 0px;
     padding: 0.5em 1em;
+
+    &:hover {
+      background-color: #a78bbe;
+      color: #ffffff;
+    }
   }
-  .submit-button:hover {
-    background-color: #a78bbe;
-    color: #ffffff;
+
+  @include mq($xl-large) {
+    .email-input {
+      margin-bottom: 0;
+    }
+
+    form {
+      justify-content: space-around;
+      flex-direction: row;
+    }
+
+    form > * {
+      width: 48%;
+    }
   }
 }
 
 .sponsor {
   display: block;
   margin: 3em 0;
+  font-size: 0.9rem;
 }

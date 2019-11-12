@@ -15,10 +15,35 @@ body {
 }
 
 body {
-  background-image: url('/images/europe.svg');
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: right top;
+  position: relative;
+  z-index: 1;
+
+  & > * {
+    position: relative;
+    z-index: 10;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background-image: url("/images/europe.svg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -10% -50%;
+
+    opacity: 20%;
+
+    @include mq($large) {
+      opacity: 1;
+      background-position: right top;
+    }
+  }
 }
 
 a {
@@ -41,7 +66,7 @@ h5 {
 }
 
 .container {
-  width: 50%;
+  width: 100%;
   padding: 10% 10% 0 10%;
   color: #ffffff;
 
@@ -50,12 +75,12 @@ h5 {
 
     &:before {
       content: "";
-      width: 50px;
+      width: 30px;
       height: 1px;
       display: block;
       background-color: #ffffff;
       position: relative;
-      left: -75px;
+      left: -50px;
       top: 11px;
     }
 
@@ -68,21 +93,31 @@ h5 {
     }
   }
 
-  .logo, h1 {
+  .logo,
+  h1 {
     font-family: $headline-font;
     font-weight: 900;
   }
 
   h1 {
     float: left;
-    font-size: 2.53333rem;
+    font-size: 2.4rem;
     line-height: 1.2em;
     margin-bottom: 0.3em;
+    text-align: left;
+
+    @include mq($large) {
+      font-size: 2.6rem;
+    }
   }
 
   h2 {
     clear: both;
     font-size: 1rem;
     margin-bottom: 3em;
+  }
+
+  @include mq($large) {
+    width: 50%;
   }
 }
