@@ -35,12 +35,13 @@ body {
     background-image: url('/images/europe.svg');
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: -10% -50%;
 
     opacity: 20%;
 
     @include mq($large) {
       opacity: 1;
+      background-position: right top;
     }
   }
 }
