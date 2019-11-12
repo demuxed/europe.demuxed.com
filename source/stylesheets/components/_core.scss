@@ -37,7 +37,8 @@ body {
     background-repeat: no-repeat;
     background-position: -10% -50%;
 
-    opacity: 20%;
+    opacity: 0.2;
+    visibility: visible;
 
     @include mq($large) {
       opacity: 1;
