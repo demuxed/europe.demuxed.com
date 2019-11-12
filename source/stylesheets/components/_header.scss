@@ -19,7 +19,8 @@
 .logo {
   width: 147px;
   height: 25px;
-  margin: 1.6em auto 1em auto;
+  margin-top: 1.6em;
+  margin-bottom: 1em;
   display: block;
   @extend %logo-white;
   background-repeat: no-repeat;
