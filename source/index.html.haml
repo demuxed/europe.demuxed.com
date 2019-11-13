@@ -14,13 +14,10 @@ title: Demuxed Europe, A one day event for video engineers
         %br.break
         Central London, UK
       %div.subscribe-card
-        <form onsubmit="submit(); return false;">
-        <input type="email" required="" name="EMAIL" placeholder="Your email address" class="email-input">
-        <input class="submit-button" type="submit" value="Keep me updated!"/>
-        </form>
+        %form#interest
+          %input.email-input{type: "email", required: true, name: "EMAIL", placeholder: "Your email address"}
+          %input.submit-button{type: "submit", value: "Keep me updated!"}
       %a.sponsor{href: "https://airtable.com/shrifhOafnFE9A0MT", target: "_blank", rel:"noopener"}
         I want to sponsor!
-      :javascript
-            function submit() {
-              console.log("hi");
-            }
+
+%script{src: "/javascripts/all.js"}

@@ -1,5 +1,6 @@
 // This is where it all goes :)
 (function (document) {
+  console.log('woo');
   function ready(callback){
     // in case the document is already rendered
     if (document.readyState!='loading') callback();
@@ -11,11 +12,25 @@
     });
   }
 
-  ready(function() {
-    MicroModal.init({
-      onShow: modal => console.info(`${modal.id} is shown`),
-      openTrigger: 'data-custom-open',
-      closeTrigger: 'data-custom-close',
+  ready(() => {
+    $('form#interest').submit((e) => {
+      e.preventDefault();
+
+      const $email = $('.email-input');
+      const $button = $('.submit-button');
+      $.ajax({
+        type: 'POST',
+        url: 'https://demuxed-europe-serverless-philcluff.demuxed.now.sh/api/add-email',
+        data: JSON.stringify({ email: $email.val() }),
+        dataType: 'json',
+        success: (data) => {
+          $email.attr('disabled', true);
+          $button.attr('disabled', true);
+          $button.val("We'll be in touch!");
+        },
+        failure: console.log,
+      });
     });
   });
+
 })(document);

@@ -60,6 +60,16 @@
       background-color: #a78bbe;
       color: #ffffff;
     }
+
+    &:disabled {
+      background-color: #a78bbe;
+      color: #fff;
+
+      &:hover {
+        background-color: #a78bbe;
+        color: #fff;
+      }
+    }
   }
 
   @include mq($xl-large) {
