@@ -40,9 +40,14 @@ body {
     opacity: 0.2;
     visibility: visible;
 
-    @include mq($large) {
-      opacity: 1;
+    // Magic number to swap between left and right anchored backgrounds
+    @include mq($unstick-bg) {
+      opacity: 0.2;
       background-position: right top;
+    }
+
+    @include mq($wide) {
+      opacity: 1;
     }
   }
 }
@@ -98,10 +103,10 @@ h5 {
   h1 {
     font-family: $headline-font;
     font-weight: 900;
+    max-width: 550px;
   }
 
   h1 {
-    float: left;
     font-size: 2.4rem;
     line-height: 1.2em;
     margin-bottom: 0.3em;

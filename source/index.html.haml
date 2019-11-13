@@ -1,22 +1,23 @@
 ---
-title: Demuxed Europe, A 1 day event for video engineers
+title: Demuxed Europe, A one day event for video engineers
 ---
 
 %section.home-hero
   %div.container
     %div.home-hero__text
-      %a.logo{href: "/index.html"}
+      %a.logo{}
         %span Europe
       %h1.home-hero__heading
-        A 1 day event for video engineers
+        A one day event for video engineers
       %h2.home-hero__sub-heading
         May 2020
         %br.break
         Central London, UK
       %div.subscribe-card
-        <form action="https://demuxed.us14.list-manage.com/subscribe/post?u=7bbc679a78def4588e1661330&id=4d4cb1d884" method="post" id="mc-embedded-subscribe-form" target="_blank">
-        <input type="email" required="" name="EMAIL" placeholder="Your email address" class="email-input">
-        <input class="submit-button" type="submit" value="Keep me updated!" />
-        </form>
-      %a.sponsor{href: "https://airtable.com/shrW2AfJeBYraURIy"}
+        %form#interest
+          %input.email-input{type: "email", required: true, name: "EMAIL", placeholder: "Your email address"}
+          %input.submit-button{type: "submit", value: "Keep me updated!"}
+      %a.sponsor{href: "https://airtable.com/shrifhOafnFE9A0MT", target: "_blank", rel:"noopener"}
         I want to sponsor!
+
+%script{src: "/javascripts/all.js"}
