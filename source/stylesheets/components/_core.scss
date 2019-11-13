@@ -35,12 +35,12 @@ body {
     background-image: url("/images/europe.svg");
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: -10% -50%;
+    background-position: -10%;
 
     opacity: 0.2;
     visibility: visible;
 
-    @include mq($medium) {
+    @include mq($small) {
       background-position: 100%;
     }
 
