@@ -40,6 +40,10 @@ body {
     opacity: 0.2;
     visibility: visible;
 
+    @include mq($medium) {
+      background-position: 100%;
+    }
+
     // Magic number to swap between left and right anchored backgrounds
     @include mq($unstick-bg) {
       opacity: 0.2;
