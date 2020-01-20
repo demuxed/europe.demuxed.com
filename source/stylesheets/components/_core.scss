@@ -40,7 +40,7 @@ body {
     opacity: 0.2;
     visibility: visible;
 
-    @include mq($small) {
+    @include mq($med-large) {
       background-position: 100%;
     }
 
@@ -138,49 +138,6 @@ h5 {
   }
 }
 
-.home-hero__btn {
-  z-index: 10;
-  position: relative;
-  @include btn;
-  width: 100%;
-  margin-bottom: 2em;
-  // margin-top: 2em;
-  padding: 0.5em 1em;
-  border-radius: 0px;
-  border-width: 0px;
-  margin-left: 0.3em;
-  margin-top: 3.5em;
-
-
-  @include mq($small) {
-    max-width: 19em;
-  }
-
-  @include mq($medium) {
-  }
-}
-
-.home-hero__btn-submit {
-  z-index: 10;
-  position: relative;
-  text-transform: uppercase;
-  @include font-size(14px);
-  margin-bottom: 2em;
-  letter-spacing: 0.2em;
-  @include transition-all;
-  border-bottom: solid #ffffff 2px;
-  padding-bottom: 0.2em;
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  @include mq($small) {
-  }
-
-  @include mq($medium) {
-  }
-}
 
 .submit-talk {
   padding-top: 4em;
