@@ -26,6 +26,12 @@ body.index {
     z-index: 10;
   }
 
+  & > .wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: $brand-purple;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -33,7 +39,7 @@ body.index {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 
     background-image: url("/images/europe-cropped.svg");
     background-size: auto 100%;
@@ -83,6 +89,7 @@ h5 {
   width: 100%;
   padding: 10% 10% 0 10%;
   color: #ffffff;
+  overflow: auto;
 
   .logo {
     margin-bottom: 3.6em;
@@ -152,7 +159,7 @@ h5 {
   line-height: 1.6em;
   text-align: left;
   display: flex;
-  
+
 
   @include mq($xl-large) {
     justify-content: space-around;
