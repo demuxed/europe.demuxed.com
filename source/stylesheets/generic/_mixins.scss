@@ -22,14 +22,16 @@
   text-align: center;
   @include font-size(12px);
   color: $brand-purple;
-  background-color: $brand-pink;
+  background-color: #fff;
   letter-spacing: 0.2em;
   font-family: $button-font;
   font-weight: 600;
+  font-size: 0.8rem;
   
   &:hover {
-    background-color: $brand-purple-light;
-    color: $brand-pink;
+    background-color: #a78bbe;
+    color: #fff;
+    text-decoration: none;
   }
 }
 
