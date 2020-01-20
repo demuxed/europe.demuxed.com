@@ -39,6 +39,10 @@
   }
 }
 
+.menubar-logo {
+  float:left;
+}
+
 .menu-btn {
   @extend %device-menu-btn-open;
   width: 70px;
@@ -137,9 +141,8 @@
 
       @include mq($med-large) {
         opacity: 1;
-        text-decoration: none;
+        text-decoration: underline;
         background: 0;
-        color: $brand-pink;
       }
     }
   }
