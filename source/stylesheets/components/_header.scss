@@ -7,6 +7,10 @@
 
   .container {
     @extend %clearfix;
+
+    padding: 0;
+    margin: 0 auto;
+
     @include mq($med-large) {
       padding: 2em;
     }
@@ -40,7 +44,25 @@
 }
 
 .menubar-logo {
-  float:left;
+  width: 147px;
+  height: 25px;
+  margin: 1.6em auto 1em auto;
+  display: block;
+  @extend %logo-white;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 147px;
+
+  @include mq($tiny) {
+  }
+
+  @include mq($med-large) {
+    margin: 0;
+    float:left;
+    }
+
+  @include mq($x-large) {
+  }
 }
 
 .menu-btn {
