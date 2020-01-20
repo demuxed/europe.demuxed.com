@@ -40,7 +40,7 @@ body {
     opacity: 0.2;
     visibility: visible;
 
-    @include mq($med-large) {
+    @include mq($small) {
       background-position: 100%;
     }
 
