@@ -44,9 +44,15 @@
 }
 
 .menubar-logo {
+
+  margin-bottom: 3.6em;
+  font-family: $headline-font;
+  font-weight: 900;
+  max-width: 550px;
+
   width: 147px;
   height: 25px;
-  margin: 1.6em auto 1em auto;
+  margin: 1em auto 2em auto;
   display: block;
   @extend %logo-white;
   background-repeat: no-repeat;
@@ -62,6 +68,15 @@
     }
 
   @include mq($x-large) {
+  }
+
+  &:after {
+    content: "Europe";
+    position: relative;
+    left: 110px;
+    top: 21px;
+    color: #ffffff;
+    font-size: 1.1em;
   }
 }
 
