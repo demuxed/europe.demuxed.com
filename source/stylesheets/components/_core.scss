@@ -50,6 +50,8 @@ body.index {
 
     background-position: left top;
 
+    pointer-events: none;
+
     @include mq($unstick-bg) {
       background-position: right top;
     }
