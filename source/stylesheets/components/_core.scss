@@ -190,3 +190,32 @@ h5 {
     }
   }
 }
+
+
+.content-page {
+  .content-container {
+    max-width: 800px;
+    background: #ffffff;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+    @include font-size(19px);
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+
+  ul {
+    margin-bottom: 2em;
+
+    li {
+      @include font-size(13px);
+      color: $brand-grey;
+      a {
+      }
+    }
+  }
+}
