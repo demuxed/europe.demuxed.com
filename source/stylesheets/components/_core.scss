@@ -32,25 +32,20 @@ body {
     left: 0;
     z-index: 1;
 
-    background-image: url("/images/europe.svg");
+    background-image: url("/images/europe-cropped.svg");
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: -10%;
 
     opacity: 0.2;
     visibility: visible;
 
-    @include mq($small) {
-      background-position: 100%;
-    }
+    background-position: left top;
 
-    // Magic number to swap between left and right anchored backgrounds
     @include mq($unstick-bg) {
-      opacity: 0.2;
       background-position: right top;
     }
-
-    @include mq($wide) {
+    // Make the BG fully opaque
+    @include mq($xl-large) {
       opacity: 1;
     }
   }
