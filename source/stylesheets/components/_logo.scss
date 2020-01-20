@@ -1,0 +1,15 @@
+.logo {
+  margin-bottom: 3.6em;
+  font-family: $headline-font;
+  font-weight: 900;
+  max-width: 550px;
+
+  &:after {
+    content: "Europe";
+    position: relative;
+    left: 110px;
+    top: 21px;
+    color: #ffffff;
+    font-size: 1.1em;
+  }
+}

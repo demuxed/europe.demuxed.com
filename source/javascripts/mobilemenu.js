@@ -5,7 +5,7 @@
   var device = function () {
     if (window.addEventListener)
       return 'ontouchstart' in window ? 'touchstart' : 'click';
-    else 
+    else
       return 'click';
   };
 
@@ -22,7 +22,7 @@
 
   /* Setup on load */
   // Close the navigation on load (will remain open for non-js)
-  mainNav.setAttribute('data-state', 'closed'); 
+  mainNav.setAttribute('data-state', 'closed');
 
   /* Toggle menu */
   var toggleNavigation = function (e) {
