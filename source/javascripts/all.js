@@ -1,6 +1,5 @@
 // This is where it all goes :)
 (function(document) {
-  console.log("woo");
   function ready(callback) {
     // in case the document is already rendered
     if (document.readyState != "loading") callback();

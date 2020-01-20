@@ -18,21 +18,28 @@ body.index {
 
   background-color: $brand-purple;
 
-  position: relative;
-  z-index: 1;
-
-  & > * {
-    position: relative;
-    z-index: 10;
+  .page-head {
+    background-color: transparent;
   }
+
+  position: relative;
 
   & > .wrapper {
     position: relative;
     z-index: 1;
     background-color: $brand-purple;
+
+    & > * {
+      position: relative;
+      z-index: 10;
+    }
   }
 
-  &::after {
+  .main-content {
+    z-index: 3;
+  }
+
+  & > .wrapper::after {
     content: "";
     position: absolute;
     top: 0;
@@ -105,14 +112,6 @@ h5 {
       position: relative;
       left: -50px;
       top: 11px;
-    }
-
-    span {
-      position: relative;
-      left: 110px;
-      top: 21px;
-      color: #ffffff;
-      font-size: 1.1em;
     }
   }
 
