@@ -7,52 +7,11 @@
 
   .container {
     @include mq($large) {
-      padding: 8em 2em;
+      padding: 3em 2em;
     }
 
     @include mq($xl-large) {
-      padding: 10em 2em;
-    }
-  }
-
-  .footer-illustration {
-    display: none;
-    z-index: 0;
-
-    @include mq($large) {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: -10%;
-      width: 40%;
-      height: 90%;
-    }
-
-    @include mq($xl-large) {
-      right: -19em;
-      width: 55em;
-    }
-
-    @include mq($wide) {
-      right: -25em;
-    }
-  }
-
-  .footer-illustration2 {
-    display: none;
-    z-index: 0;
-
-    @include mq($large) {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      width: 30%;
-    }
-
-    @include mq($x-large) {
-    }
-
-    @include mq($xl-large) {
+      padding: 3em 2em;
     }
   }
 
@@ -69,7 +28,12 @@
       display: inline-block;
       width: 147px;
       height: 25px;
+
+      &:after {
+        left: 80px;
+      }
     }
+    
   }
 
   .page-foot__nav {
@@ -126,22 +90,4 @@
     @include font-size(11px);
   }
 
-  .signup-btn {
-    @include mq($med-large) {
-      @include btn;
-      opacity: 1;
-      color: $brand-purple !important;
-      padding: 0.2em 1em;
-      border-color: #fff;
-      text-transform: uppercase !important;
-      display: block;
-      margin-top: 1em;
-      font-weight: 600;
-      @include transition-all;
-
-      &:hover {
-        color: #fff !important;
-      }
-    }
-  }
 }
