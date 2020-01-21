@@ -4,7 +4,7 @@ html {
   font-weight: 400;
   line-height: $line-height-ratio;
   color: $font-color;
-  background-color: $brand-purple;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
@@ -14,44 +14,58 @@ body {
   height: 100%;
 }
 
-body {
-  position: relative;
-  z-index: 1;
+body.index {
 
-  & > * {
-    position: relative;
-    z-index: 10;
+  background-color: $brand-purple;
+
+  .page-head {
+    background-color: transparent;
   }
 
-  &::after {
+  position: relative;
+
+  & > .wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: $brand-purple;
+    min-height: 100%;
+
+    & > * {
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .main-content {
+    z-index: 3;
+  }
+
+  & > .wrapper::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 
-    background-image: url("/images/europe.svg");
+    background-image: url("/images/europe-cropped.svg");
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: -10%;
 
     opacity: 0.2;
     visibility: visible;
 
-    @include mq($small) {
-      background-position: 100%;
-    }
+    background-position: left top;
 
-    // Magic number to swap between left and right anchored backgrounds
+    pointer-events: none;
+
     @include mq($unstick-bg) {
-      opacity: 0.2;
       background-position: right top;
     }
-
-    @include mq($wide) {
-      opacity: 1;
+    // Make the BG fully opaque
+    @include mq($xl-large) {
+      opacity: 0.75;
     }
   }
 }
@@ -61,7 +75,6 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: #ffffff;
     text-decoration: underline;
   }
 }
@@ -76,9 +89,16 @@ h5 {
 }
 
 .container {
+  max-width: $max-width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.home-container {
   width: 100%;
   padding: 10% 10% 0 10%;
   color: #ffffff;
+  overflow: auto;
 
   .logo {
     margin-bottom: 3.6em;
@@ -92,14 +112,6 @@ h5 {
       position: relative;
       left: -50px;
       top: 11px;
-    }
-
-    span {
-      position: relative;
-      left: 110px;
-      top: 21px;
-      color: #ffffff;
-      font-size: 1.1em;
     }
   }
 
@@ -123,11 +135,135 @@ h5 {
 
   h2 {
     clear: both;
+    font-size: 1.5rem;
+    margin-top: 1em;
+  }
+
+  h3 {
+    clear: both;
     font-size: 1rem;
     margin-bottom: 3em;
   }
 
   @include mq($large) {
     width: 50%;
+  }
+}
+
+
+.submit-talk {
+  padding-top: 4em;
+  color: rgb(47, 28, 70);
+  font-size: 1;
+  font-family: ocr-a-std, monospace;
+  font-weight: 500;
+  line-height: 1.6em;
+  text-align: left;
+  display: flex;
+
+
+  @include mq($xl-large) {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .submit-talk-button {
+    font-family: ocr-a-std, monospace;
+    font-weight: 600;
+    color: $brand-purple;
+    letter-spacing: 0.2em;
+    background-color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1.91667;
+    text-align: center;
+    border-width: 0px;
+    padding: 0.5em 1em;
+    border-radius: 0px;
+
+    text-decoration: none;
+
+    width: 100%;
+    // TODO: Better solution
+    @include mq($xl-large) {
+      width: 48%;
+    }
+
+
+    &:hover {
+      background-color: #a78bbe;
+      color: #ffffff;
+    }
+
+    &:disabled {
+      background-color: #a78bbe;
+      color: #fff;
+
+      &:hover {
+        background-color: #a78bbe;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.content-page {
+  .content-container {
+    max-width: 800px;
+    background: #ffffff;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+    @include font-size(19px);
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+
+  ul {
+    margin-bottom: 2em;
+
+    li {
+      @include font-size(13px);
+      color: $brand-grey;
+      a {
+      }
+    }
+  }
+}
+
+.main-content {
+  li {
+    @include font-size(16px);
+    line-height: 1.6em;
+  }
+
+  p {
+    @include font-size(13px);
+    line-height: 1.8em;
+    color: $brand-grey;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .container {
+    padding: 3em 2em;
+
+    @include mq($medium) {
+      padding: 4em 2em;
+    }
+
+    @include mq($large) {
+      padding: 6em 2em;
+    }
   }
 }
