@@ -28,6 +28,7 @@ body.index {
     position: relative;
     z-index: 1;
     background-color: $brand-purple;
+    min-height: 100%;
 
     & > * {
       position: relative;
@@ -64,7 +65,7 @@ body.index {
     }
     // Make the BG fully opaque
     @include mq($xl-large) {
-      opacity: 1;
+      opacity: 0.5;
     }
   }
 }
