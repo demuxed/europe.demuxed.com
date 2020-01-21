@@ -65,7 +65,7 @@ body.index {
     }
     // Make the BG fully opaque
     @include mq($xl-large) {
-      opacity: 0.5;
+      opacity: 0.75;
     }
   }
 }
