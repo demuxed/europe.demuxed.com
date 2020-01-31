@@ -142,7 +142,6 @@
 
     a {
       font-family: $default-serif;
-      @include transition-all;
       display: block;
       color: #fff;
       text-transform: uppercase;
@@ -165,7 +164,7 @@
           border-color: #fff;
 
           &:hover {
-            color: #ff8c67 !important;
+            color: #fff !important;
           }
         }
       }
