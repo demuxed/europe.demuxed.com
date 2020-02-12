@@ -142,7 +142,11 @@ h5 {
   h3 {
     clear: both;
     font-size: 1rem;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
+
+    @include mq($xl-large) {
+      margin-bottom: 3em;
+    }
   }
 
   @include mq($large) {
