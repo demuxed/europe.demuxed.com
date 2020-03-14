@@ -14,65 +14,65 @@ body {
   height: 100%;
 }
 
-body.index {
+// body.index {
 
-  background-color: $brand-purple;
+//   // background-color: $brand-purple;
 
-  .page-head {
-    background-color: transparent;
-  }
+//   .page-head {
+//     background-color: transparent;
+//   }
 
-  position: relative;
+//   position: relative;
 
-  & > .wrapper {
-    position: relative;
-    z-index: 1;
-    background-color: $brand-purple;
-    min-height: 100%;
+//   & > .wrapper {
+//     position: relative;
+//     z-index: 1;
+//     background-color: $brand-purple;
+//     min-height: 100%;
 
-    & > * {
-      position: relative;
-      z-index: 10;
-    }
-  }
+//     & > * {
+//       position: relative;
+//       z-index: 10;
+//     }
+//   }
 
-  .main-content {
-    z-index: 3;
-  }
+//   .main-content {
+//     z-index: 3;
+//   }
 
-  & > .wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
+//   & > .wrapper::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 2;
 
-    background-image: url("/images/europe-cropped.svg");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+//     // background-image: url("/images/europe-cropped.svg");
+//     // background-size: auto 100%;
+//     // background-repeat: no-repeat;
 
-    opacity: 0.2;
-    visibility: visible;
+//     opacity: 0.2;
+//     visibility: visible;
 
-    background-position: left top;
+//     background-position: left top;
 
-    pointer-events: none;
+//     pointer-events: none;
 
-    @include mq($unstick-bg) {
-      background-position: right top;
-    }
-    // Make the BG fully opaque
-    @include mq($xl-large) {
-      opacity: 0.75;
-    }
-  }
-}
+//     @include mq($unstick-bg) {
+//       background-position: right top;
+//     }
+//     // Make the BG fully opaque
+//     @include mq($xl-large) {
+//       opacity: 0.75;
+//     }
+//   }
+// }
 
 a {
   color: $link-color;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     text-decoration: underline;
@@ -220,7 +220,7 @@ h5 {
 
   h1 {
     margin-bottom: 1em;
-    @include font-size(19px);
+    @include font-size(30px);
     text-transform: uppercase;
   }
 
