@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/flori/json.git
+  remote: https://github.com/flori/json.git
   revision: 7f4cfd853f2c919d854fb95548a19980feff17e8
   branch: v1.8
   specs:
@@ -115,7 +115,7 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.13.1)
       activesupport (>= 3.1)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
