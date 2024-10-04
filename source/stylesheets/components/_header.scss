@@ -12,12 +12,12 @@
     margin: 0 auto;
 
     @include mq($med-large) {
-      padding: 1em;
+      padding: 2em;
     }
 
-    // @include mq($large) {
-    //   padding: 2.8em 2em;
-    // }
+    @include mq($large) {
+      padding: 2.8em 2em;
+    }
   }
 }
 
@@ -59,18 +59,16 @@
   background-position: 0 0;
   background-size: 147px;
 
-  text-decoration: none;
-  
-  // @include mq($tiny) {
-  // }
+  @include mq($tiny) {
+  }
 
-  // @include mq($med-large) {
-  //   margin: 0;
-  //   float:left;
-  //   }
+  @include mq($med-large) {
+    margin: 0;
+    float:left;
+    }
 
-  // @include mq($x-large) {
-  // }
+  @include mq($x-large) {
+  }
 
   &:after {
     content: "Europe";
